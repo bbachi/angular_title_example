@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center; background-color: aqua">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <ul class="links">
+    <li><a [routerLink]="['/about']">About</a></li>
+    <li><a [routerLink]="['/dashboard']">Dashboard</a></li>
+    <li><a [routerLink]="['/profile']">Profile</a></li>
+    <li><a [routerLink]="['/myaccount']">My Account</a></li>
+    <li><a [routerLink]="['/users/profile']">Users</a></li>
+  </ul>
+</div>
+<h2>Quick Links: </h2>
+<ul>
+  <li><a (click)="setDocTitle( 'About' )">About</a>.</li>
+  <li><a (click)="setDocTitle( 'Dashboard' )">Dashboard</a>.</li>
+  <li><a (click)="setDocTitle( 'Profile' )">Profile</a>.</li>
+  <li><a (click)="setDocTitle( 'My Account' )">My Account</a>.</li>
+</ul>
+
+<router-outlet></router-outlet>
